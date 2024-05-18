@@ -10,7 +10,6 @@ import Footer from "../Footer/Footer.js";
 
 import './Home.css';
 
-const client_id = "INSERT ID HERE";
 
 export default class Home extends Component {
   constructor(props) {
@@ -48,7 +47,7 @@ export default class Home extends Component {
       body: new URLSearchParams({
         grant_type: 'refresh_token',
         refresh_token: token,
-        client_id: client_id,
+        client_id: this.props.client_id,
       }),
     }).then(res => res.json()).then(body => {
       console.log("TOKEN RECEIVING");

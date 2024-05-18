@@ -136,7 +136,7 @@ function App() {
             return null;
           }}/>
           <Route path="callback" element={<CallbackClass />} />
-          <Route path="home" element={<Home/>} />
+          <Route path="home" element={<Home client_id={client_id}/>} />
 
 
       </Routes>
