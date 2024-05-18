@@ -47,7 +47,7 @@ I have previously worked with each of these individually but this is my first ti
     ```
 
 3. **Set up environment variables**:
-    Edit the start of App.js to
+    Edit the start of [App.js](https://github.com/SatvikVejendla/SpotifyStats/blob/main/src/App.js) to
    ```sh
    let client_id=your_client_id;
    let client_secret=your_client_secret;
