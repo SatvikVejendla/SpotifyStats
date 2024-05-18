@@ -34,12 +34,14 @@ SpotifyStats is a web application that provides users with insights and statisti
 
 ## Inspiration
 
-This project was meant to be a challenging project for me to incorporate various different services into a singular coherent application. The task was to create a responsive website that combined
+This project was meant to be a challenging project for me to incorporate various different services into a singular coherent application. The task was to create a responsive website that combined:
 - React.JS frontend
 - Express backend
 - MySQL database
 
 I have previously worked with each of these individually but this is my first time making them interact with each other for one overall purpose. Whenever a new user logs in to the website, the React server requests the backend to authorize the user, which connects to the MySQL database to access/modify the relevant access tokens and returns them to the website for processing.
+
+This was my first time working on creating a responsive website that would function on smaller viewports as well, so it was a little bit challenging. In addition, the Spotify API rate limit proved as a challenge as I would have to conserve my API requests carefully.
 
 ---
 
