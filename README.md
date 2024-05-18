@@ -2,6 +2,8 @@
 
 SpotifyStats is a web application that provides users with insights and statistics about their Spotify listening habits. By connecting to the Spotify API, users can view detailed analytics about their most played tracks, artists, genres, and more.
 
+---
+
 ## Table of Contents
 
 - [Features](#features)
@@ -12,17 +14,23 @@ SpotifyStats is a web application that provides users with insights and statisti
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
+---
+
 ## Features
 
 - **Most Listened Stats**: View details on your most listened tracks/artists over given time periods
 - **Responsive Design**: A fully responsive site that can operate seamlessly for smaller viewports, ensuring a smooth user experience on any device.
 - **Vanilla JS**: Uses no external libraries aside from React and React-Router, providing a lightweight and efficient user experience.
-- **Express Backend**: Connects to an external backend Node.JS server
+- **Express Backend**: Connects to an external [backend Node.JS server](https://github.com/SatvikVejendla/SpotifyStatsBackend/tree/main)
 - **MySQL Database**: Authentication tokens are stored on a local MySQL server for retention of user data
+
+---
 
 ## Preview
 
 ![App Preview](https://github.com/SatvikVejendla/SpotifyStats/blob/main/screenshots/spotifyapp.gif)
+
+---
 
 ## Inspiration
 
@@ -32,6 +40,8 @@ This project was meant to be a challenging project for me to incorporate various
 - MySQL database
 
 I have previously worked with each of these individually but this is my first time making them interact with each other for one overall purpose. Whenever a new user logs in to the website, the React server requests the backend to authorize the user, which connects to the MySQL database to access/modify the relevant access tokens and returns them to the website for processing.
+
+---
 
 ## Installation
 
@@ -66,28 +76,36 @@ I have previously worked with each of these individually but this is my first ti
     npm start
     ```
 
+---
+
 ## Usage
 
 1. **Connect Your Spotify Account**:
-   Open the application and log in with your Spotify developer account to grant the necessary permissions.
+   Open the application and log in with your [Spotify developer account](https://developer.spotify.com/) to grant the necessary permissions.
 
 2. **Authorize App**:
    You will need to edit the app in your developer portal to your app by using the respective client tokens and authorizing your redirect_uri.
 
 3. **Create MySQL Database**:
-   Download the MySQL server client and set up a local server (more details in the backend server README).
+   Download the [MySQL server client](https://dev.mysql.com/downloads/installer/) and set up a local server (more details in the [server README](https://github.com/SatvikVejendla/SpotifyStatsBackend/blob/main/README.md).
    
 4. **Set up Backend server**:
-   This website works in conjunction with a backend Express server which has to be run simultaneously.
+   This website works in conjunction with a [backend Express server](https://github.com/SatvikVejendla/SpotifyStatsBackend/tree/main) which has to be run simultaneously.
 
 5. **View Your Stats**:
    Navigate through the app to explore various statistics about your listening habits.
+
+---
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## Acknowledgements
 
 - [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
 - Inspired by various Spotify statistics tracking applications such as [stats.fm](https://stats.fm/).
+
+---
