@@ -1,0 +1,142 @@
+
+#radio4 + label {
+    border-radius: 10px 0 0 0px;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to right, var(--deselected) 50%, var(--selected) 0%);
+}
+#radio4 + label:not(.transition){
+    background-position: right;
+}
+#radio4 + label.transition{
+    background-position: left;
+}
+
+#radio5 + label {
+    background-size: 300% 300%;
+    background-image: linear-gradient(to right, var(--deselected) 33.33%, var(--selected) 33.33% 66.66%, var(--deselected) 66.66%);
+}
+#radio5 + label:not(.transitionRight):not(.transitionLeft){
+    background-position: center;
+}
+#radio5 + label.transitionRight{
+    background-position: left;
+}
+#radio5 + label.transitionLeft{
+    background-position: right;
+}
+
+#radio6 + label {
+    border-radius: 0 10px 0px 0;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to right, var(--selected) 50%, var(--deselected) 0%);
+}
+#radio6 + label:not(.transition){
+    background-position: right;
+}
+#radio6 + label.transition{
+    background-position: left;
+}
+
+.carouselRelative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    border-radius: 0px 0px 10px 10px;
+}
+
+.controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+.controls2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    
+}
+
+.carouselItem {
+    flex-shrink: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.leftControl, .rightControl {
+    opacity: 1;
+    background-color: rgba(153, 149, 149, 0.53);
+    height: 100%;
+    
+}
+.leftControl {
+    border-radius: 0px 0px 0px 10px;
+}
+.rightControl {
+    border-radius: 0px 0px 10px 0px;
+}
+
+.leftControl:hover, .rightControl:hover{
+    opacity: 1;
+    background-color:rgba(92, 90, 90, 0.5);
+}
+
+.trackItem {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    overflow-y: hidden;
+}
+
+.trackName {
+    color: white;
+    font-size: 0.9vw;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.trackArtist {
+    color: rgb(168, 167, 167);
+    font-size: 0.6vw;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+
+.artistIconOuter.tSection {
+    border-radius: 10px;
+}
+.artistHeader .header.tSection {
+    height: 100%;
+    border-radius: 10px;
+}

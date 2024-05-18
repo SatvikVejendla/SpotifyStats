@@ -3,14 +3,34 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background {
+  min-height: 100vh;
+}
+
+.header {
+  background-color: red;
+}
+
+.authorize {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: green;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: rgb(66, 56, 56);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.authorize:hover {
+  color: rgb(66, 56, 56);
+  background-color: green;
 }
 
 .App-header {
@@ -26,13 +46,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

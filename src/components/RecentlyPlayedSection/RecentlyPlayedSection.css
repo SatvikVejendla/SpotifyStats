@@ -1,0 +1,88 @@
+.recentsHeader {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.recentsTitle {
+    font-size: 1.7vw;
+    margin: 0;
+
+}
+.recentsDescription {
+    font-size: 0.9vw;
+    font-style: italic;
+}
+
+.recentsWrapper {
+    background-color: rgb(40, 39, 39);
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.dayEntry {
+    display: flex;
+    flex-direction: column;
+}
+.dateEntry {
+    font-size: 25px;
+    margin: 0.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playedTrack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.subPlayedTrack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playedTrackInfo {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.timestamp {
+    font-size: 0.9vw;
+    margin-right: 1vw;
+}
+
+.playedTrackImage {
+    width: 3vw;
+    height: 3vw;
+}
+.playedTrackName {
+    font-size: 1vw;
+}
+.playedTrackArtist {
+    font-size: 0.6vw;
+    font-style: italic;
+}
+
+.line {
+    background-color: rgb(54, 50, 50);
+    height: 3px;
+    width: 100%;
+    margin: 5px;
+}
+
+.dateDescriptor {
+    font-size: 1.3vw;
+}
